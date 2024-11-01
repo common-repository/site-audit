@@ -1,0 +1,25 @@
+/**
+ * Post Meta
+ */
+
+.msa-post-meta-container {
+	display: inline-block;
+}
+
+.msa-post-meta-audit-meta-attributes {
+	padding-right: 20px;
+}
+
+.msa-post-meta-attribute {
+	font-weight: bold;
+}
+
+.msa-post-meta-value {
+	padding: 6px 12px;
+	margin: 0;
+}
+
+.msa-post-meta-value.msa-post-status-bg {
+	text-align: center;
+	font-weight: bold;
+}

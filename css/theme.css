@@ -1,0 +1,31 @@
+/**
+ * This theme is baed on the My Site Audit color palette.
+ *
+ * Source: http://www.color-hex.com/color-palette/12493
+ */
+
+/* Text */
+
+.mas-text-default {
+	color: #333;
+}
+
+.msa-text-primary {
+	color: #a532f7;
+}
+
+.msa-text-success {
+	color: #357f26;
+}
+
+.msa-text-warning {
+	color: #f7a532;
+}
+
+.msa-text-danger {
+	color: #FA421F;
+}
+
+.msa-text-info {
+	color: #26357f;
+}

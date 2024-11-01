@@ -1,0 +1,295 @@
+/**
+ * Helper Classes
+ */
+
+/* Modal */
+
+.msa-condition-more-info {
+	opacity: 0.5;
+}
+
+.msa-condition-more-info:hover {
+	cursor: pointer;
+}
+
+.msa-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.75);
+}
+
+.msa-modal-container {
+	display: block;
+	width: 700px;
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 10vh;
+	min-height: 100px;
+	background-color: white;
+}
+
+.msa-modal-title {
+	padding: 2px 12px;
+	border-bottom: 1px solid #ddd;
+}
+
+.msa-modal-title h3 {
+	display: inline-block;
+}
+
+.msa-modal-close {
+	float: right;
+	padding: 17px 0px;
+	text-decoration: underline;
+}
+
+.msa-modal-close:hover {
+	cursor: pointer;
+}
+
+.msa-modal-content {
+	padding: 20px;
+}
+
+.msa-modal-learn-more-link {
+	border-top: 1px solid #ddd;
+	color: white;
+	background-color: #00C000;
+}
+
+.msa-modal-learn-more-link a {
+	padding: 20px 0px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+.msa-modal-learn-more-link:hover {
+	background-color: white;
+}
+
+.msa-modal-learn-more-link:hover a {
+	color: #00C000;
+}
+
+/* Tooltips */
+
+.msa-tooltips {
+	color: #333;
+	position: absolute;
+	top: 0px;
+	right: 2px;
+	line-height: 12px;
+}
+
+.msa-tooltips span {
+	position: absolute;
+	width:140px;
+	color: #FFFFFF;
+	background: #000;
+	height: auto;
+	line-height: 1.5em;
+	padding: 12px 0px;
+	text-align: center;
+	visibility: hidden;
+	border-radius: 6px;
+	white-space: normal;
+}
+
+.msa-tooltips span:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -3px;
+	width: 0;
+	height: 0;
+	border-top: 8px solid #000;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+
+.msa-tooltips:hover span {
+	visibility: visible;
+	opacity: 0.9;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -76px;
+	z-index: 999;
+}
+
+.msa-tooltips:hover {
+	color: #333;
+	opacity: 1;
+}
+
+.msa-tooltips i {
+	font-size: 12px;
+	opacity: 0.25;
+}
+
+/* Spinner */
+
+.msa-spinner {
+	height: 28px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 12px;
+}
+
+.msa-spinner img {
+	height: 20px;
+	vertical-align: middle;
+}
+
+.msa-system-status-table {
+	padding-right: 20px;
+}
+
+.msa-system-status-table td:first-of-type {
+	border-left: 3px solid;
+	width: 33%;
+}
+
+td.msa-system-status-row.ok {
+	border-color: #7ad03a;
+}
+
+td.msa-system-status-row.bad {
+	border-color: #dd3d36;
+}
+
+/**
+ * Status Colors
+ */
+
+.msa-post-status > td:first-of-type {
+	border-left: 3px solid;
+}
+
+.msa-post-status-bg,
+.msa-post-status-bg > td {
+	color: white;
+	background-color: #777;
+}
+
+
+/* Great */
+
+.msa-post-status-great > td:first-of-type {
+	border-color: #00C000;
+}
+
+.msa-post-status-bg-great,
+.msa-post-status-bg-great > td {
+	background-color: #00C000;
+}
+
+.msa-post-status-text-great {
+	color: #00C000;
+}
+
+.msa-post-status-border-great {
+	border-color: #00C000 !important;
+}
+
+/* Good */
+
+.msa-post-status-good > td:first-of-type {
+	border-color: #9ACD32;
+}
+
+.msa-post-status-bg-good,
+.msa-post-status-bg-good > td {
+	background-color: #9ACD32;
+}
+
+.msa-post-status-text-good {
+	color: #9ACD32;
+}
+
+.msa-post-status-border-good {
+	border-color: #9ACD32 !important;
+}
+
+/* Ok */
+
+.msa-post-status-ok > td:first-of-type {
+	border-color: #CCAA00;
+}
+
+.msa-post-status-bg-ok,
+.msa-post-status-bg-ok > td {
+	background-color: #CCAA00;
+}
+
+.msa-post-status-text-ok {
+	color: #CCAA00;
+}
+
+.msa-post-status-border-ok {
+	border-color: #CCAA00 !important;
+}
+
+/* Poor */
+
+.msa-post-status-poor > td:first-of-type {
+	border-color: #E79E19;
+}
+
+.msa-post-status-bg-poor,
+.msa-post-status-bg-poor > td {
+	background-color: #E79E19;
+}
+
+.msa-post-status-text-poor {
+	color: #E79E19;
+}
+
+.msa-post-status-border-poor {
+	border-color: #E79E19 !important;
+}
+
+/* Bad */
+
+.msa-post-status-bad > td:first-of-type {
+	border-color: #B20000;
+}
+
+.msa-post-status-bg-bad,
+.msa-post-status-bg-bad > td {
+	background-color: #B20000;
+}
+
+.msa-post-status-text-bad {
+	color: #B20000;
+}
+
+.msa-post-status-border-bad {
+	border-color: #B20000 !important;
+}
+
+/**
+ * Media Queries
+ */
+
+@media screen and (max-width: 768px) {
+
+	.wp-list-table.msa-audit-table .msa-condition-weight-col,
+	.wp-list-table.msa-audit-table .msa-condition-weight,
+	.wp-list-table.msa-audit-table .msa-condition-goal-col,
+	.wp-list-table.msa-audit-table .msa-condition-goal {
+		display: none !important;
+	}
+
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+		display: table-cell;
+	}
+}
